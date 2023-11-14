@@ -54,6 +54,7 @@ const incrementer = document.getElementById('incrementer');
 const decrementer = document.getElementById('décrementer');
 const number = document.getElementById('number');
 const stopOk = document.getElementById('stop');
+const submit = document.getElementById('submit');
 
 let count = 0;
 
@@ -76,6 +77,10 @@ stopOk.addEventListener('click', () =>{
 })
 
 
+function envoyer(event){
+    event.preventDefault();
+    console.log("Message envoyé !")
+}
 
-
+submit.addEventListener('submit', envoyer)
 
